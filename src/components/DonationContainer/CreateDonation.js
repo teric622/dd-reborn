@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import AddImage from '../UtilitiesContainer/AddImage';
+import './CreateDonation.css';
 
 export default class CreateDonation extends Component {
     render() {
@@ -7,16 +8,18 @@ export default class CreateDonation extends Component {
             <div className="CreateDonation">
                 <center>
                     <h1>Create A Donation</h1>
+                    <div className="add">
                     <AddImage />
+                    </div>
                 </center>
                 <center>
                     <form>
-                        <div>
+                        <div >
                             <input type="text" className="inputBox" placeholder="Campaign Name" />
                         </div>
                         <br />
 
-                        <div>
+                        <div className="inputSelection">
                             <select name="Organizations" required>
                                 <option value="" disabled selected hidden>Choose a Organization</option>
                                 <option value="coffee">Non-profit</option>
@@ -26,12 +29,12 @@ export default class CreateDonation extends Component {
                         </div>
                         <br />
 
-                        <div>
+                        <div >
                             <input type="email" className="inputBox" placeholder="Zip Code" />
                         </div>
                         <br />
 
-                        <div>
+                        <div className="inputSelection">
                         <select name="Category" required>
                                 <option value="" disabled selected hidden>Pick from the Categories</option>
                                 <option value="coffee">Health</option>
@@ -42,13 +45,13 @@ export default class CreateDonation extends Component {
                         </div>
                         <br />
 
-                        <div>
-                            <input type="password" className="inputBox" placeholder="Password" />
+                        <div >
+                            <input type="text" className="inputBox" placeholder="Goal" />
                         </div>
                         <br />
 
-                        <div>
-                            <input type="password" className="inputBox" placeholder="Add a Description" />
+                        <div >
+                            <input type="text" className="descBox" placeholder="Add a Description"/>
                         </div>
                     </form>
                 </center>

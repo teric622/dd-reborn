@@ -1,0 +1,51 @@
+
+
+body{
+    padding-top: 60px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vh;
+}
+
+.inputBox {
+    border: 2px solid lightgray;
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 30px;
+    width: 180px;
+}
+
+.descBox{
+    border: 2px solid lightgray;
+    padding-left: 5px;
+    color: blue;
+    border-radius: 3px;
+    height: 75px;
+    width: 180px;
+}
+
+.inputSelection{
+    position: relative;
+    color: gray;
+}
+
+::placeholder { 
+    color: gray;
+    opacity: 1; 
+  }
+
+.add{
+    margin-bottom: 25%;
+}
+
+.CreateDonation select{
+    border: 2px solid lightgray;
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 35px;
+    width: 188px;
+}
+
+.CreateDonation h1{
+    padding-bottom: 10%;
+}
