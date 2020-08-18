@@ -1,0 +1,89 @@
+
+.welcome{
+    width:100%;
+    height: auto;
+    /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
+    /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    background-blend-mode: screen;
+    animation: ani 5s infinite linear;
+    background-size: 300%;
+
+}
+
+
+ .welcomelogo{
+    width: 90%;
+    height: auto;
+}
+
+
+.button {
+    display: inline-block;
+    text-align: center;
+    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);;
+    color: var(--bg);
+    text-emphasis-color: white;
+    font-weight: bold;
+    padding: 1.18em 1.32em 1.03em;
+    line-height: 1;
+    border-radius: 1em;
+    position: relative;
+    min-width: 8.23em;
+    text-decoration: none;
+    font-family: var(--font);
+    font-size: 1.25rem;
+    border-style: groove;
+    animation: ani 5s infinite linear;
+}
+
+.button:before,
+.button:after {
+    width: 4.4em;
+    height: 2.95em;
+    position: absolute;
+    content: "";
+    display: inline-block;
+    background: var(--color);
+    border-radius: 50%;
+    transition: transform 1s ease;
+    transform: scale(0);
+    z-index: -1;
+}
+
+.button:before {
+    top: -25%;
+    left: 20%;
+}
+
+.button:after {
+    bottom: -25%;
+    right: 20%;
+}
+
+.button:hover:before,
+.button:hover:after {
+    transform: none;
+}
+
+
+
+
+
+
+
+
+
+@keyframes ani {
+    0% {
+      background-position: 0% 50%;
+    }
+  
+    50% {
+      background-position: 100% 50%;
+    }
+  
+    100% {
+      background-position: 0% 50%;
+    }
+  }
