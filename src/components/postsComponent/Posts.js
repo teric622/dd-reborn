@@ -1,6 +1,8 @@
 import React, {Component} from "react";
 import "./Posts.css";
 import Post from '../PostComponent/Post';
+import '../HeaderSocialContainer/Header';
+import'../SocialFeedBodyComponent/FeedBody';
 
 
 export default class Posts extends Component{
@@ -14,7 +16,7 @@ export default class Posts extends Component{
                     "image": "http://localhost:3000/1.jpg",
                     "image_desc":"test Desc"
                     },   
-                    
+                        
                     {
                         "user_name": "Bill",
                         "user_image": "http://localhost:3000/user.png",
