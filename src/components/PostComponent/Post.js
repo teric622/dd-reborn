@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import "./Post.css";
 
-function Post(){
+function Post(props){
         return (
             <div className="post">
       <div className="post__user">

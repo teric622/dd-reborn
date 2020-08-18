@@ -30,7 +30,8 @@ export default class Welcome extends Component {
                     <br></br>
                         <br></br>
                         <div className = "Wbutton">
-                   <Link to='/explorer'><button>Enter</button></Link>
+                   <Link to='/explorer' ><btn className="button">Enter</btn></Link>
+                  
                    </div>
                         <br></br>
                         <br></br>
