@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import DDLogo from '../../assets/DDLogo.png';
 import {Link} from 'react-router-dom';
+import './Welcome.css';
 
 
 
@@ -13,15 +14,45 @@ export default class Welcome extends Component {
             <div className="welcome">
                 <div className="welcome-info">
                     <center>
-                    <h1>Donate</h1>
-                    <h2>Differently</h2>
+                    {/* <h1>Donate</h1>
+                    <h2>Differently</h2> */}
                     </center>
                     <div>
                     <center>
+                    <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
                     <img src={DDLogo} alt="logo" className="welcomelogo" />
                     </center>
                     <center>
+                    <br></br>
+                        <br></br>
+                        <div className = "Wbutton">
+                   <Link to='/explorer' ><btn className="button">Enter</btn></Link>
+                  
+                   </div>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                        <br></br>
+                    {/* <img src={DDLogo} alt="logo" className="welcomelogo" />
+                    </center>
+                    <center>
+                        <div className = "Wbutton">
                    <Link to='/explorer'><button>Enter</button></Link>
+                   </div> */}
                     
                     </center>
                 </div>

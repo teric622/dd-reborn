@@ -11,7 +11,9 @@ import DonationExplorer from './components/DonationContainer/DonationExplorer';
 import UserHome from './components/UserContainer/UserHome';
 import Payment from './components/PaymentContainer/Payment';
 import MyDonations from './components/UserContainer/UserDonations';
-
+import Header from './components/HeaderSocialContainer/Header'
+import Posts from './components/postsComponent/Posts';
+import DonationDetails from './components/DonationContainer/DonationDetails';
 ReactDOM.render(  
   <React.StrictMode>
 
@@ -23,8 +25,12 @@ ReactDOM.render(
         <Route exact path="/user" component={UserHome} />
         <Route path="/user/mydonations" component={MyDonations} />
         <Route path="/user/payments" component={Payment} />
+        <Route path="/user/Posts" component={Posts} />
+        <Route path="/user/DonationDetails" component={DonationDetails} />
+       
         {/* <Route path="/terms" component={Terms} />
         <Route path="/terms" component={Terms} /> */}
+<Header/>
       </Switch>
     </Router>
 
