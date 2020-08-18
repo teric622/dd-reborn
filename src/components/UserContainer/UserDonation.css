@@ -87,7 +87,7 @@
 /*Dropdown menu css*/
 
 #dropdown-basic-button {
-    background: #f7f9fa;
+    background: rgb(241, 241, 241);
     border: none;
 
 }
@@ -99,7 +99,7 @@
 #dropdown-menu {
     background: whitesmoke;    
     border: 1px solid lightgrey;
-    width: 100%;
+    width: 45vmax;
     text-align: left;
     float: left;
 }
@@ -114,14 +114,15 @@
     border: none;
     background-color: whitesmoke;
     width: 90%;
-    margin: 0px 5px;
+    margin: 10px 5px;
+    text-align: left;
+    margin-left: 15px;
 }
 
 .dd-divider {
     border: .5px solid lightgrey;
     margin: 10px 0px;
-    margin-left: 5px;
-    width: 90%;
+    width: 45vmax;
 }
 
 .dd-item:hover {
