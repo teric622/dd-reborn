@@ -1,7 +1,10 @@
 import React, {Component} from "react";
 import "./Posts.css";
 import Post from '../PostComponent/Post';
-
+import '../HeaderSocialContainer/Header';
+import'../SocialFeedBodyComponent/FeedBody';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import Addpost from '../addPostComponent/Addpost';
 
 export default class Posts extends Component{
     constructor(props){
@@ -9,26 +12,26 @@ export default class Posts extends Component{
             this.state={
                 "posts": [
                     {
-                    "user_name": "Eroc",
+                    "user_name": "Tom",
                     "user_image": "http://localhost:3000/user.png",
                     "image": "http://localhost:3000/1.jpg",
-                    "image_desc":"test Desc"
+                    "image_desc":"Thank you to all who supported our cause https/:organization link!" 
                     },   
-                    
+                        
                     {
                         "user_name": "Bill",
                         "user_image": "http://localhost:3000/user.png",
                         "image": "http://localhost:3000/2.jpg",
-                        "image_desc":"test Desc"
+                        "image_desc":"Thank you all for donating for a cleaner enviorment. https/:organization link!"
                         },
                     
                         {
-                            "user_name": "Sal",
+                            "user_name": "Samantha",
                             "user_image": "http://localhost:3000/user.png",
                             "image": "http://localhost:3000/3.jpg",
-                            "image_desc":"test Desc"
+                            "image_desc":"#ActionThroughDonation https/:organization link!"
                             },
-                    
+                       
                     
                         ]
                 
@@ -52,8 +55,14 @@ let posts = this.state.posts;
  
         return (
             <div className="posts-container">
+                <Addpost/>
       {htmlContent}
+
+      <div className= 'Back'><ArrowBackIcon/> </div>
       </div>
+     
+       
+        
             );
         }
     }

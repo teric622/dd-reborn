@@ -1,3 +1,10 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
 /* DONATION CSS */
 .donation-home {
     background: #ffffff;
@@ -8,6 +15,7 @@
 .donation-title {
     display: inline-block;
     margin-bottom: 30px;
+    width: 100%;
 }
 
 /* CSS for the progress bar */
@@ -21,6 +29,8 @@
     background: lightgray;
     margin: 0px 10px;
     border-radius: 25px;
+    
+ 
 }
 
 /* No Kid Hungry CSS */
@@ -29,9 +39,10 @@
     margin-bottom: 30px;
     display: inline-block;
     height: 50vmax;
-    width: 50vmax;
-}
+    width: 100%;
+    background-color: rgb(241, 241, 241);
 
+}
 .donation-name {
     float: left;
     margin: 10px;
@@ -40,12 +51,12 @@
 .charity-dropdown {
     margin: 15px;
     width: 45vmax;
+   
 }
 
 .nkd-amount-donated {
     float: left;
     font-size: 16px;
-    background:white;
 }
 
 #nkd-progress {
@@ -53,9 +64,11 @@
 }
 
 .charity-logo {
-    width: 45vmax;
+    width: 40vmax;
     height: 10em;
     margin: 10px 0px;
+    margin-left: -9%;
+    
 }
 
 /* Ronald McDonald CSS */
@@ -63,6 +76,8 @@
 .rmd {
     background: #f7f9fa;
     display: inline-block;
+    width: 100%;
+    height:auto;
 }
 
 #rmd-progress {
@@ -79,14 +94,40 @@
 
 #dropdown-menu-align-right{
     float:right;
-    margin-top: 14px;
 }
 
 #dropdown-menu {
-    background:white;   
+    background: whitesmoke;    
     border: 1px solid lightgrey;
+    width: 100%;
+    text-align: left;
+    float: left;
 }
 
 .dropdown{
     display: inline-block;
+
+}
+
+.dd-item {
+    text-decoration: none;
+    border: none;
+    background-color: whitesmoke;
+    width: 90%;
+    margin: 0px 5px;
+}
+
+.dd-divider {
+    border: .5px solid lightgrey;
+    margin: 10px 0px;
+    margin-left: 5px;
+    width: 90%;
+}
+
+.dd-item:hover {
+    background-color: #f8f9fa;
+}
+
+#dd-delete {
+    color: red;
 }

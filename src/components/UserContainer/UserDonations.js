@@ -43,11 +43,12 @@ export default class MyDonations extends Component {
 
                                 <Dropdown.Menu id="dropdown-menu">
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
-                                    <Dropdown.Item className = "dd-item">Action</Dropdown.Item>
+                                    <Dropdown.Item as = "button" className = "dd-item">View Charity</Dropdown.Item>
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
-                                    <Dropdown.Item className = "dd-item">Another action</Dropdown.Item>
+                                    <Dropdown.Item as = "button" className = "dd-item">Donate Again</Dropdown.Item>
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
-                                    <Dropdown.Item className = "dd-item">Something else</Dropdown.Item>
+                                    <Dropdown.Item as = "button" className = "dd-item" id = "dd-delete">✖ Remove from Favorites</Dropdown.Item>
+                                    <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
                                 </Dropdown.Menu>
                             </Dropdown>
                         </div>
