@@ -12,13 +12,14 @@ import UserHome from './components/UserContainer/UserHome';
 import Payment from './components/PaymentContainer/Payment';
 import MyDonations from './components/UserContainer/UserDonations';
 import Header from './components/HeaderSocialContainer/Header'
-import Posts from './components/postsComponent/Posts'
+import Posts from './components/postsComponent/Posts';
+import CreateDonation from './components/DonationContainer/CreateDonation';
 ReactDOM.render(  
   <React.StrictMode>
 
     <Router>
       <Switch>
-        <Route exact path="/" component={Welcome}/>
+        <Route exact path="/" component={CreateDonation}/>
         {/* <Route path="/terms" component={Terms} /> */}
         <Route path="/explorer" component={DonationExplorer} />        
         <Route exact path="/user" component={UserHome} />
