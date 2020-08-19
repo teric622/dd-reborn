@@ -1,15 +1,22 @@
 import React, { Component } from 'react';
 import AddImage from '../UtilitiesContainer/AddImage';
-
+import './CreateDonation.css'
 export default class CreateDonation extends Component {
     render() {
         return (
             <div className="CreateDonation">
                 <center>
-                    <h1>Create A Donation</h1>
+                   
+                    <div className ="add">
+                        <button className ="imgbut">
                     <AddImage />
+                    </button>
+                    </div>
                 </center>
                 <center>
+                    <div className="tCreate"> 
+                <h1>Create A Donation</h1>
+                </div>
                     <form>
                         <div>
                             <input type="text" className="inputBox" placeholder="Campaign Name" />
@@ -43,12 +50,12 @@ export default class CreateDonation extends Component {
                         <br />
 
                         <div>
-                            <input type="password" className="inputBox" placeholder="Password" />
+                            <input type="text" className="inputBox" placeholder="Goal" />
                         </div>
                         <br />
 
                         <div>
-                            <input type="password" className="inputBox" placeholder="Add a Description" />
+                            <input type="text" className="inputBox" placeholder="Add a Description" />
                         </div>
                     </form>
                 </center>
