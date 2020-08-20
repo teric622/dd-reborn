@@ -3,10 +3,6 @@ import DDLogo from '../../assets/DDLogo.png';
 import {Link} from 'react-router-dom';
 import './Welcome.css';
 
-
-
-
-
 export default class Welcome extends Component {
     render() {
 
@@ -47,13 +43,6 @@ export default class Welcome extends Component {
                         <br></br>
                         <br></br>
                         <br></br>
-                    {/* <img src={DDLogo} alt="logo" className="welcomelogo" />
-                    </center>
-                    <center>
-                        <div className = "Wbutton">
-                   <Link to='/explorer'><button>Enter</button></Link>
-                   </div> */}
-                    
                     </center>
                 </div>
                 
