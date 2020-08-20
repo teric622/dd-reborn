@@ -3,7 +3,7 @@ import AddImage from '../UtilitiesContainer/AddImage';
 import Donation from './Donation';
 import {Button} from 'react-bootstrap';
 import ReactDOM from 'react-dom';
-
+import './CreateDonation.css'
 export default class CreateDonation extends Component {
     
     constructor(props){
