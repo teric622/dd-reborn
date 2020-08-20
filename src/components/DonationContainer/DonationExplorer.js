@@ -11,13 +11,16 @@ import ProgressBar from "./progressbar";
 import { Link } from 'react-router-dom';
 import "./DonationExplorer.css";
 
+import Posts from "../postsComponent/Posts";
+
+
 
 const useStyles = makeStyles({
   root: {
     maxWidth: 345
   },
   media: {
-    height: 140
+    height: 160
   }
 });
 
@@ -32,7 +35,7 @@ export default function MediaCard() {
       <center>
    
               <div className="Dfill">  
-           <p>Donations</p>
+           <h1>Explore</h1>
            </div>
            </center>
            <br></br>
@@ -40,7 +43,8 @@ export default function MediaCard() {
               <br></br>
               <br></br>
               <br></br>
-    
+              <h2>Recommended</h2>
+    <div className="explore">
         <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -70,8 +74,8 @@ export default function MediaCard() {
         </p>
       </CardContent>
     </Card>
-
     <br></br>
+    
     <Card className={classes.root}>
       <CardActionArea>
         <CardMedia
@@ -102,9 +106,42 @@ export default function MediaCard() {
       </CardContent>
     </Card>
     
+    <br></br>
+    <Card className={classes.root}>
+      <CardActionArea>
+        <CardMedia
+          className={classes.media}
+          image="https://upload.wikimedia.org/wikipedia/en/e/e7/Logo_for_the_Environmental_Defense_Fund_-_white_background.jpg"
+          title="EDF"
+        />
+        <CardContent>
+          <Typography variant="h5" component="h2" className="title">
+            Environmental Defense Fund
+          </Typography>
+        </CardContent>
+      </CardActionArea>
+      <CardActions className="progress">
+        <ProgressBar />
+      </CardActions>
+      <CardContent className="progresstext">
+        <p className="alignleft" variant="body2" color="textSecondary"component="p">
+          1450 <br /> Donors
+        </p>
 
+        <p className="aligncenter" variant="body2" color="textSecondary"component="p">
+        $9067 <br /> Raised
+        </p>
+        <p className="alignright" variant="body2" color="textSecondary"component="p">
+          $10000 <br /> Goal
+        </p>
+      </CardContent>
+    </Card>
   </div>
-  
+<br/>
+<br/>
+<br/>
+  <Posts></Posts>
+  </div>
  
 
 
