@@ -16,7 +16,7 @@ import Posts from './components/postsComponent/Posts';
 import CreateDonation from './components/DonationContainer/CreateDonation';
 ReactDOM.render(  
   <React.StrictMode>
-
+{/* <Route exact path="/" component={CreateDonation}/> */}
     <Router>
       <Switch>
       <Route exact path="/" component={Welcome}/>
@@ -25,9 +25,9 @@ ReactDOM.render(
         <Route path="/explorer" component={DonationExplorer} />        
         <Route exact path="/user" component={UserHome} />
         <Route path="/user/mydonations" component={MyDonations} />
+        <Route path="/user/CreateDonations" component={MyDonations} />
         <Route path="/user/payments" component={Payment} />
-        <Route path="/user/Posts" component={Posts} />
-       
+        <Route path="/user/Posts" component={Posts} />       
         {/* <Route path="/terms" component={Terms} />
         <Route path="/terms" component={Terms} /> */}
 <Header/>

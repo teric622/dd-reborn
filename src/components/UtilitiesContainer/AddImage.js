@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import axios from 'axios';
+import  './Addimage.css'
+import AddPhotoAlternateIcon from '@material-ui/icons/AddPhotoAlternate';
 
 export default class AddImage extends Component{
     state = {
@@ -24,8 +26,11 @@ fileUploadHandler = () => {
     render(){
         return(
             <div classNames="AddImage">
-                <input type="file" onChange={this.fileSelectedHandler} />
-                <button onClick={this.fileUploadHandler}>Upload</button>
+                <div className = "choosefile">
+                    {/* input type is the choose file button */}
+                <input type="file" Icon= {AddPhotoAlternateIcon} onChange={this.fileSelectedHandler} />
+                </div>
+                <button onClick={this.fileUploadHandler}><AddPhotoAlternateIcon/></button>
             </div>
         )
     }

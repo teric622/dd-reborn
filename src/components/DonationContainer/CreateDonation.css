@@ -63,4 +63,38 @@ body{
 
 .CreateDonation h1{
     padding-bottom: 10%;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vh;
+    height:auto;
+}
+
+.inputBox{
+   border-radius: 3px;
+border: 1px solid grey;
+height:30px;
+width:180px;
+padding-left: 5px;
+
+}
+
+.CreateDonation select{
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    width:188px;
+    height: 35px;
+}
+
+.CreateDonation h1{
+ padding-bottom: 20%;
+}
+
+.add{
+ margin-bottom:25%;
+}
+
+.tCreate{
+margin-bottom: 20%;
 }

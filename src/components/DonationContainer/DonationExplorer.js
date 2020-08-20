@@ -39,7 +39,7 @@ export default function MediaCard() {
       <center>
    
               <div className="Dfill">  
-           <p>Donations</p>
+           <p>Donation Explorer Page</p>
            </div>
            </center>
            <br></br>
