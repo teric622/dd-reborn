@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import DDLogo from '../../assets/DDLogo.png';
+import DDLogo from '../../assets/Group-1.png';
 import {Link} from 'react-router-dom';
 import './Welcome.css';
 

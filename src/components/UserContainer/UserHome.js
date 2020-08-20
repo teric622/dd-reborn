@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../assets/DDLogo.png';
+import logo from '../../assets/Group-1.png';
 import './UserHome.css';
 
 export default class UserHome extends Component{
