@@ -76,6 +76,7 @@ export default function MediaCard() {
         <ProgressBar />
       </CardActions>
       <CardContent className="progresstext">
+
         <Typography className="alignleft" variant="body2" color="textSecondary"component="p">
           215 <br /> Donors
         </Typography>
@@ -83,16 +84,14 @@ export default function MediaCard() {
         <Typography className="aligncenter" variant="body2" color="textSecondary"component="p">
         $2500 <br /> Raised
         </Typography>
+
         <Typography className="alignright" variant="body2" color="textSecondary"component="p">
           $10000 <br /> Goal
         </Typography>
+
       </CardContent>
     </Card>
 
   </div>
-  
- 
-
-
   );
 }
