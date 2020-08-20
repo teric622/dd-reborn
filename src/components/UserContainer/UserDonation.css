@@ -49,7 +49,6 @@
 }
 
 .charity-dropdown {
-    display: inline-block;
     margin: 15px;
     width: 45vmax;
    
@@ -58,12 +57,6 @@
 .nkd-amount-donated {
     float: left;
     font-size: 16px;
-}
-
-.nkd-dropdown-dots {
-    float: right;
-    font-size: 16px;
-    padding-right: 30px;
 }
 
 #nkd-progress {
@@ -81,7 +74,7 @@
 /* Ronald McDonald CSS */
 
 .rmd {
-    background: rgb(241, 241, 241);
+    background: #f7f9fa;
     display: inline-block;
     width: 100%;
     height:auto;
@@ -89,4 +82,54 @@
 
 #rmd-progress {
     width: 55%;
+}
+
+/*Dropdown menu css*/
+
+#dropdown-basic-button {
+    background: rgb(241, 241, 241);
+    border: none;
+    margin-right: 15px;
+
+}
+
+#dropdown-menu-align-right{
+    float:right;
+}
+
+#dropdown-menu {
+    background: whitesmoke;    
+    border: 1px solid lightgrey;
+    width: 45vmax;
+    text-align: left;
+    float: left;
+}
+
+.dropdown{
+    display: inline-block;
+
+}
+
+.dd-item {
+    text-decoration: none;
+    border: none;
+    background-color: whitesmoke;
+    width: 90%;
+    margin: 10px 5px;
+    text-align: left;
+    margin-left: 15px;
+}
+
+.dd-divider {
+    border: .5px solid lightgrey;
+    margin: 10px 0px;
+    width: 45vmax;
+}
+
+.dd-item:hover {
+    background-color: #f8f9fa;
+}
+
+#dd-delete {
+    color: red;
 }

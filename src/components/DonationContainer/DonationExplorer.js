@@ -10,6 +10,7 @@ import Typography from "@material-ui/core/Typography";
 import ProgressBar from "./progressbar";
 import "./DonationExplorer.css";
 import { Link } from 'react-router-dom';
+import ListAltIcon from '@material-ui/icons/ListAlt';
 import Popup from 'reactjs-popup';
 import UserHome from "../UserContainer/UserHome";
 
@@ -29,7 +30,7 @@ export default function MediaCard() {
   return (
     <div className="donation-explorer-page">
     <div className="Ebutton">
-      <Popup trigger={<button>Current User</button>}
+      <Popup trigger={<button className="popup-btn" ><ListAltIcon fontSize="large" /></button>}
       position="bottom left"
     >
       <UserHome/>
@@ -38,7 +39,7 @@ export default function MediaCard() {
       <center>
    
               <div className="Dfill">  
-           <p>Donations</p>
+           <p>Donation Explorer</p>
            </div>
            </center>
            <br></br>
