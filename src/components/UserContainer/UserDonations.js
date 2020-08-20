@@ -82,7 +82,7 @@ export default class MyDonations extends Component {
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
                                     <Dropdown.Item as = "button" className = "dd-item">View Charity</Dropdown.Item>
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
-                                    <Dropdown.Item as = "button" className = "dd-item" ><Link to='user/payments'>Donate Again</Link></Dropdown.Item>
+                                    <Dropdown.Item as = "button" className = "dd-item" ><Link to='/user/payments'>Donate Again</Link></Dropdown.Item>
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
                                     <Dropdown.Item as = "button" className = "dd-item" id = "dd-delete">✖ Remove from Favorites</Dropdown.Item>
                                     <Dropdown.Divider className = "dd-divider"></Dropdown.Divider>
