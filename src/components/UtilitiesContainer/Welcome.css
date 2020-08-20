@@ -4,7 +4,8 @@
     height: auto;
     /* background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%); */
     /* background-image: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%); */
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);
+    /*background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%); */
+    background-image: linear-gradient(45deg, #000000 0%, #e4efe9 100%);
     background-blend-mode: screen;
     animation: ani 5s infinite linear;
     background-size: 300%;
@@ -17,73 +18,70 @@
     height: auto;
 }
 
-
 .button {
     display: inline-block;
-    text-align: center;
-    background-image: linear-gradient(45deg, #93a5cf 0%, #e4efe9 100%);;
-    color: var(--bg);
-    text-emphasis-color: white;
     font-weight: bold;
     padding: 1.18em 1.32em 1.03em;
     line-height: 1;
     border-radius: 1em;
     position: relative;
     min-width: 8.23em;
-    text-decoration: none;
     font-family: var(--font);
     font-size: 1.25rem;
     border-style: groove;
-    animation: ani 5s infinite linear;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    z-index: 0;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
 }
 
-.button:before,
-.button:after {
-    width: 4.4em;
-    height: 2.95em;
-    position: absolute;
-    content: "";
-    display: inline-block;
-    background: var(--color);
-    border-radius: 50%;
-    transition: transform 1s ease;
-    transform: scale(0);
-    z-index: -1;
+.button:before{
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  /*opacity: 0;*/
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
 }
 
-.button:before {
-    top: -25%;
-    left: 20%;
+/*.button:active:after {
+  background: transparent;
 }
 
-.button:after {
-    bottom: -25%;
-    right: 20%;
+.button:hover:before {
+  opacity: 1;
 }
 
-.button:hover:before,
 .button:hover:after {
-    transform: none;
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #111;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}*/
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
 }
 
-
-
-
-
-
-
-
-
-@keyframes ani {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
-  }
+@keyframes mymove {
+  from {left: -100%;}
+  to {left: 0px;}
+}

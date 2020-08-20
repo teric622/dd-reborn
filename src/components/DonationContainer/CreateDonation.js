@@ -3,6 +3,19 @@ import AddImage from '../UtilitiesContainer/AddImage';
 import Donation from './Donation';
 import {Button} from 'react-bootstrap';
 import ReactDOM from 'react-dom';
+import './CreateDonation.css';
+import { styled } from '@material-ui/core/styles';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+
+
+const BackButton = styled(ArrowBackIcon)({
+    clickableIcon: {
+      color: 'black',
+      '&:hover': {
+      color: 'red',
+      },
+    },
+  });
 
 export default class CreateDonation extends Component {
     
@@ -47,6 +60,8 @@ export default class CreateDonation extends Component {
     render() {
         return (
             <div className="CreateDonation">
+                <div className= 'col-1'><BackButton onClick={event => window.location.href='../user'} /></div>
+                <br/>
                 {this.state.isCreated ?
                               <Donation
                               title={this.state.title}
@@ -55,19 +70,22 @@ export default class CreateDonation extends Component {
                               />
                               :
                     <>
+                    <br/>
                 <center>
                     <h1>Create A Donation</h1>
+                    <div className="add">
                     <AddImage />
+                    </div>
                 </center>
                 <center>
                     <form onSubmit={this.handleSubmit}>
                         <div>
-                            <input type="text" name="title" onChange={this.handleChange} placeholder="Campaign Name" />
+                            <input type="text" name="title" className="inputBox" onChange={this.handleChange} placeholder="Campaign Name" />
                         </div>
                         <br />
 
-                        <div>
-                            <select name="Organizations" required>
+                        <div >
+                            <select name="Organizations" className="inputSelection" required>
                                 <option value="" disabled selected hidden>Choose a Organization</option>
                                 <option value="non-profit">Non-profit</option>
                                 <option value="personal">Personal</option>
@@ -81,7 +99,7 @@ export default class CreateDonation extends Component {
                         </div>
                         <br />
 
-                        <div>
+                        <div className="inputSelection">
                         <select name="Category" required>
                                 <option value="" disabled selected hidden>Pick from the Categories</option>
                                 <option value="health">Health</option>
@@ -93,20 +111,20 @@ export default class CreateDonation extends Component {
                         <br />
 
                         <div>
-                            <input type="text" name="goal" placeholder="Goal" onChange={this.handleChange} />
+                            <input type="text" name="goal" placeholder="Goal" className="inputBox" onChange={this.handleChange} />
                         </div>
                         <br />
 
-                        <label>
-                            Description:
+                        
                             <textarea 
                              type="text"
                              name="description"
-                             placeholder="Add a Description" 
+                             placeholder="Add a Description"
+                             className="descBox"
                              onChange={this.handleChange}
                               />
-                        </label>
-                        <input type="submit" value="Create"/>
+                              <br/>
+                        <input type="submit" className="createButton" value="Create"/>
                     </form>             
                     
           

@@ -24,10 +24,10 @@ export default class Donation extends Component{
 
         return(
             <div className="donation-page">
-                <h1>{Title}</h1>
-                <p>{Description}</p>
+                <h1>Campaign Name: {Title}</h1>
+                <p>Description: {Description}</p>
                 <div className="progress-bar">
-                    {Goal}
+                    <p>Goal: </p>{Goal}
                 </div>
             </div>
         );

@@ -14,18 +14,15 @@
     text-decoration: none;
   }
 
-
-  
   .user-home button{
         width: 85%;
         height: 4em;
-        margin-bottom:50%;
+        margin-bottom: 18%;
         background-color: #00cc7a;
-        border-radius: 25pt;
+        border-radius: 20pt;
         color: white;
         font-weight:bold;
         font-size: 20px;
-      
   }
   
 
@@ -35,6 +32,7 @@
     padding-top: 10%;
     display: flex;
     align-items: center;
+    margin-bottom: 10%;
   }
 
   .MyPro{
@@ -67,7 +65,7 @@
 
 .user-home h5{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 5vmax;
+  font-size: 25px;
   color: lightslategrey;
 }
 
