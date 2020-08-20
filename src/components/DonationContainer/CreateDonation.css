@@ -1,0 +1,100 @@
+body{
+    display: flex;
+    flex-direction: column;
+    max-width: 80vh;
+}
+
+.CreateDonation{
+    background-color: #eded;
+    height: 810px;
+    border: 1px solid black;
+}
+
+.inputBox {
+    border: 2px solid lightgray;
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 40px;
+    width: 200px;
+}
+
+.descBox{
+    border: 2px solid lightgray;
+    padding-left: 5px;
+    color: blue;
+    border-radius: 3px;
+    height: 75px;
+    width: 200px;
+}
+
+.inputSelection{
+    position: relative;
+    color: gray;
+}
+
+::placeholder { 
+    color: gray;
+    opacity: 1; 
+  }
+
+.CreateDonation .add{
+    margin-bottom: 25%;
+}
+
+.createButton{
+    background-color: #00cc7a;
+    border-radius: 5pt;
+    border: 1px solid white;
+    color: black;
+    font-weight:bold;
+    font-size: 20px;
+    margin-top: 10%;
+    height: 35px;
+    width: 150px;
+}
+
+.CreateDonation select{
+    border: 2px solid lightgray;
+    padding-left: 5px;
+    border-radius: 3px;
+    height: 45px;
+    width: 208px;
+}
+
+.CreateDonation h1{
+    padding-bottom: 10%;
+    padding-top: 0px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vh;
+    height:auto;
+}
+
+.inputBox{
+   border-radius: 3px;
+border: 1px solid grey;
+height:30px;
+width:180px;
+padding-left: 5px;
+
+}
+
+.CreateDonation select{
+    border-radius: 3px;
+    border: 1px solid gray;
+    padding-left: 5px;
+    width:188px;
+    height: 35px;
+}
+
+.CreateDonation h1{
+ padding-bottom: 20%;
+}
+
+.add{
+ margin-bottom:25%;
+}
+
+.tCreate{
+margin-bottom: 20%;
+}

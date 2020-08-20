@@ -8,10 +8,19 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import ProgressBar from "./progressbar";
+
 import { Link } from 'react-router-dom';
 import "./DonationExplorer.css";
 
 import Posts from "../postsComponent/Posts";
+
+
+
+import "./DonationExplorer.css";
+import { Link } from 'react-router-dom';
+import ListAltIcon from '@material-ui/icons/ListAlt';
+import Popup from 'reactjs-popup';
+import UserHome from "../UserContainer/UserHome";
 
 
 
@@ -20,7 +29,8 @@ const useStyles = makeStyles({
     maxWidth: 345
   },
   media: {
-    height: 160
+    height: 160   
+
   }
 });
 
@@ -30,26 +40,29 @@ export default function MediaCard() {
   return (
     <div className="donation-explorer-page">
     <div className="Ebutton">
-      <Link to="/user" id="user-home-link"><button>Current User</button></Link>
+
+      <Popup trigger={<button className="popup-btn" ><ListAltIcon fontSize="large" /></button>}
+      position="bottom left"
+    >
+      <UserHome/>
+      </Popup>
+
       </div>
       <center>
    
               <div className="Dfill">  
-           <h1>Explore</h1>
-           </div>
-           </center>
-           <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
+
               <h2>Recommended</h2>
     <div className="explore">
         <Card className={classes.root}>
+=======
+    <Card className={classes.root}>
+
       <CardActionArea>
         <CardMedia
           className={classes.media}
           image="https://www.charities.org/sites/default/files/NKH_2018_Endorsed_90_10_rgb_0.png"
+
           title="NKH"
         />
         <CardContent>
@@ -142,8 +155,5 @@ export default function MediaCard() {
 <br/>
   <Posts></Posts>
   </div>
- 
-
-
   );
 }
