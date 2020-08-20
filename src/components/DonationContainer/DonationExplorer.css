@@ -1,6 +1,49 @@
 .progresstext {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
+}
+
+.explore{
+  display: flex;
+  flex-wrap: wrap; 
+  margin:-10px;
+  align-content: center;
+  margin-left: 77px;
+  margin-top: 50px;
+}
+
+.explore>* {
+  flex: 1 1 160px;
+  margin: 10px;
+}
+
+.aligncenter {
+  margin-left: 15%;
+  margin-top: -15%;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.575rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+  
+}
+
+.alignright {
+  margin-left: 15%;
+  margin-top: -15%;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 0.575rem;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.43;
+  letter-spacing: 0.01071em;
+}
+.title{
+  padding-bottom: 0px;
+}
+
+=======
 }
 .aligncenter {
   margin-left: 15%;
@@ -24,6 +67,7 @@
   letter-spacing: 0.01071em;
 }
 
+
 .alignleft {
   margin-left: 15%;
   margin-top: -15%;
@@ -35,6 +79,7 @@
   letter-spacing: 0.01071em;
 }
 
+
 .popup-btn{
   background-color: transparent;
   border: transparent;
@@ -43,3 +88,4 @@
   height: 15px;
   width: 15px;
 }
+
