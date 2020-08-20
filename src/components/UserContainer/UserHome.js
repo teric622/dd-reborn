@@ -49,9 +49,6 @@ export default class UserHome extends Component{
                       
                     <br/>
                     <br/>
-                    <br/> 
-                    <br/>
-                    <br/> 
                     <Link to="/user/create" id="user-home-link"><button>Create A Donation</button></Link>
                     </div>
                     </center>

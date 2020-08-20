@@ -9,23 +9,20 @@
 
   .user-home .user-link{
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 5vmax;
+    font-size: 25px;
     color: lightslategrey;
     text-decoration: none;
   }
 
-
-  
   .user-home button{
-        width: 12em;
-        height: 5em;
-        margin-top:-6em;
+        width: 85%;
+        height: 4em;
+        margin-bottom: 18%;
         background-color: #00cc7a;
-        border-radius: 25pt;
+        border-radius: 20pt;
         color: white;
         font-weight:bold;
         font-size: 20px;
-      
   }
   
 
@@ -38,17 +35,15 @@
   }
 
   .MyPro{
-    width: 100%;
-    height: auto;
+   
     text-align: center;
     padding-bottom: 5%;
-    font-size: 30px;
+    font-size: 25px;
     
   }
 
   .MyDon{
-    width: 100%;
-    height: auto;
+  
     text-align: center;
     padding-bottom: 5%;
    
@@ -56,22 +51,20 @@
 
 
   .MyPay{
-    width: 100%;
-    height: auto;
+    
     text-align: center;
     padding-bottom: 5%;
   }
 
   .MySet{
-    width: 100%;
-    height: auto;
+   
     text-align: center;
     padding-bottom: 5%;
   }
 
 .user-home h5{
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 5vmax;
+  font-size: 25px;
   color: lightslategrey;
 }
 
