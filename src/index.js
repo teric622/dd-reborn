@@ -19,7 +19,8 @@ ReactDOM.render(
 
     <Router>
       <Switch>
-        <Route exact path="/" component={CreateDonation}/>
+      <Route exact path="/" component={Welcome}/>
+        <Route exact path="/user/create" component={CreateDonation}/>
         {/* <Route path="/terms" component={Terms} /> */}
         <Route path="/explorer" component={DonationExplorer} />        
         <Route exact path="/user" component={UserHome} />
