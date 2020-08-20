@@ -3,34 +3,9 @@ import {Link} from 'react-router-dom';
 import './DonationExplorer.css';
 import Barba from '@barba/core';
 
-var FadeTransition = Barba.BaseTransition.extend({
-        start: function() {
-            Promise.all([this.newContainerLoading, this.fadeOut()]).then(
-                this.fadeIn.bind(this)
-            );
-        },
-        fadeOut: function() {
-
-        },
-        fadeIn: function() {
-            this.newContainer.classList.add("slide-in");
-
-            var that = this;
-
-            this.newContainer.addEventListener('animationend', function(){
-                that.newContainer.classList.remove("slide-in");
-                that.done();
-            });
-        }
-    });
-    Barba.Pjax.getTransition = function() {
-        return FadeTransition;
-    }
-
 export default class DonationExplorer extends Component{
 
     render(){
-      
         return(
             <div className="donation-explorer-page">
               <div className="Ebutton">
