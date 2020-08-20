@@ -10,6 +10,8 @@ import Typography from "@material-ui/core/Typography";
 import ProgressBar from "./progressbar";
 import "./DonationExplorer.css";
 import { Link } from 'react-router-dom';
+import Popup from 'reactjs-popup';
+import UserHome from "../UserContainer/UserHome";
 
 
 const useStyles = makeStyles({
@@ -27,7 +29,11 @@ export default function MediaCard() {
   return (
     <div className="donation-explorer-page">
     <div className="Ebutton">
-      <Link to="/user" id="user-home-link"><button>Current User</button></Link>
+      <Popup trigger={<button>Current User</button>}
+      position="bottom left"
+    >
+      <UserHome/>
+      </Popup>
       </div>
       <center>
    
