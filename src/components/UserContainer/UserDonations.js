@@ -1,39 +1,32 @@
 import React, { Component } from 'react';
+import './UserDonation.css'
+import { Dropdown } from 'react-bootstrap'
+import { Link } from 'react-router-dom';
+import BackButton from '../UtilitiesContainer/BackButton';
+
+//Importing Charity Images
+import rmdlogo from '../../assets/ronaldmcdonald.png';
 import nkhlogo from '../../assets/nkhlogo.png';
+import DonationCard from '../DonationContainer/DonationCard';
 
 export default class MyDonations extends Component {
+    constructor(props){
+        super(props);
+    }
     render() {
         return (
             <div className="donation-home">
-               
+                <BackButton />
+
                 <div className="donation-title">
-                    <h2>My Donations</h2>
-                </div>
-
-                <div className="donationlists">
-                    <div className = "nkh">
-                        <p className="donation-name">No kid hungry</p>
-                        <br></br>
-                        
-                        <div>   
-                            <img src={nkhlogo} alt = "logo" className = "charity-logo" ></img>
-                        </div>
-                        
-                        <div className = "outside-progress">
-                            <div className = "donation-progress" id ="nkd-progress"></div>
-                        </div>
-
-                        <div className="charity-dropdown">
-                            <p className="nkd-amount-donated">$48 Donated</p>
-                            <p className="nkd-dropdown-dots">●●●</p>
-                        </div>
-
-                    </div>
-
-                    <div className="rmd">
-                        <p className="donation-name">Ronald McDonald</p>
+                    <h2>Favorite Donations</h2>
+                    <div className="donationlists">
+                        <DonationCard />
+                        <DonationCard />
                     </div>
                 </div>
+
+
             </div>
         );
     }

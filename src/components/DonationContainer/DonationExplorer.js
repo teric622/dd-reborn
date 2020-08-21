@@ -1,19 +1,52 @@
-import React, {Component} from 'react';
-import {Link} from 'react-router-dom';
+import React, { Component } from "react";
+import "./DonationExplorer.css";
+import DonationCard from "./DonationCard";
+import Posts from "../postsComponent/Posts";
+import UserMenuButton from "../UtilitiesContainer/UserMenu";
 
 
-export default class DonationExplorer extends Component{
 
-    render(){
-        return(
-            <div className="donation-explorer-page">
-                <Link to="/user" id="user-home-link"><button>Current User</button></Link>
-                <h1>Donations</h1>
-                <p>This component will be what you first see when you are logged in successfully.
-                    You will see local or trending donations.
-                </p>
-            </div>
-        );
-    }
 
+
+
+export default class Explorer extends Component {
+
+
+
+  render() {
+    return (
+      <div className="donation-explorer-page">
+        <div className="Ebutton">
+          <UserMenuButton/>
+        </div>
+
+
+      <center>
+        <h2>Recommended</h2>
+        </center>
+        <div className="explore">
+
+          <br></br>
+
+        <DonationCard
+        title="No Kids Hungry"
+        goal="$10000"
+        raised="$2500"
+        donors="215"        
+        />
+          <br/>
+        <DonationCard
+        title="Ronald McDonald House"
+        goal="$10000"
+        raised="$2500"
+        donors="215"        
+        />
+          <br />
+          <br />
+          <br />
+          <Posts></Posts>
+        </div>
+      </div>
+    );
+  }
 }
