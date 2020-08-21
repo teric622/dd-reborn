@@ -1,7 +1,10 @@
 import React, {Component} from "react";
 import "./Addpost.css";
+
+
 // input will allow for functionallity, type must be file for file to be accesed, and must show what is acceptable
 // input must connect at the button 
+
 export default class Addpost extends Component{
     render() {
         return (

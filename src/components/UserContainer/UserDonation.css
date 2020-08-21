@@ -14,7 +14,7 @@
 
 .donation-title {
     display: inline-block;
-    margin-bottom: 30px;
+    margin-bottom: 50px;
     width: 100%;
 }
 
@@ -100,7 +100,7 @@
 #dropdown-menu {
     background: whitesmoke;    
     border: 1px solid lightgrey;
-    width: 45vmax;
+    width: 150px;
     text-align: left;
     float: left;
 }
@@ -123,7 +123,7 @@
 .dd-divider {
     border: .5px solid lightgrey;
     margin: 10px 0px;
-    width: 45vmax;
+    
 }
 
 .dd-item:hover {
@@ -132,4 +132,11 @@
 
 #dd-delete {
     color: red;
+}
+
+.donationlists{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
 }

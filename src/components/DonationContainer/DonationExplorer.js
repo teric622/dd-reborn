@@ -1,97 +1,52 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Card from "@material-ui/core/Card";
-import CardActionArea from "@material-ui/core/CardActionArea";
-import CardActions from "@material-ui/core/CardActions";
-import CardContent from "@material-ui/core/CardContent";
-import CardMedia from "@material-ui/core/CardMedia";
-import Button from "@material-ui/core/Button";
-import Typography from "@material-ui/core/Typography";
-import ProgressBar from "./progressbar";
+import React, { Component } from "react";
 import "./DonationExplorer.css";
-import { Link } from 'react-router-dom';
-import ListAltIcon from '@material-ui/icons/ListAlt';
-import Popup from 'reactjs-popup';
-import UserHome from "../UserContainer/UserHome";
+import DonationCard from "./DonationCard";
+import Posts from "../postsComponent/Posts";
+import UserMenuButton from "../UtilitiesContainer/UserMenu";
 
 
-const useStyles = makeStyles({
-  root: {
-    maxWidth: 345
-  },
-  media: {
-    height: 140
-  }
-});
 
-export default function MediaCard() {
-  const classes = useStyles();
 
-  return (
-    <div className="donation-explorer-page">
-    <div className="Ebutton">
-      <Popup trigger={<button className="popup-btn" ><ListAltIcon fontSize="large" /></button>}
-      position="bottom left"
-    >
-      <UserHome/>
-      </Popup>
-      </div>
+
+
+export default class Explorer extends Component {
+
+
+
+  render() {
+    return (
+      <div className="donation-explorer-page">
+        <div className="Ebutton">
+          <UserMenuButton/>
+        </div>
+
+
       <center>
-   
-              <div className="Dfill">  
-           <p>Donation Explorer</p>
-           </div>
-           </center>
-           <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-              <br></br>
-    <Card className={classes.root}>
-      <CardActionArea>
-        <CardMedia
-          className={classes.media}
-          image="https://www.charities.org/sites/default/files/NKH_2018_Endorsed_90_10_rgb_0.png"
-          title="Contemplative Reptile"
+        <h2>Recommended</h2>
+        </center>
+        <div className="explore">
+
+          <br></br>
+
+        <DonationCard
+        title="No Kids Hungry"
+        goal="$10000"
+        raised="$2500"
+        donors="215"        
         />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="h2">
-            No Kids Hungry
-          </Typography>
-          <Typography variant="body2" color="textSecondary" component="p">
-            America’s kids need us. The coronavirus is closing schools
-            nationwide, and millions of vulnerable children are losing the
-            school meals they depend on.
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-      
-      <CardActions>
-        {/* <Button size="small" color="primary">
-          Share
-        </Button>
-        <Button size="small" color="primary">
-          Learn More
-        </Button> */}
-        <ProgressBar />
-      </CardActions>
-      <CardContent className="progresstext">
-
-        <Typography className="alignleft" variant="body2" color="textSecondary"component="p">
-          215 <br /> Donors
-        </Typography>
-
-        <Typography className="aligncenter" variant="body2" color="textSecondary"component="p">
-        $2500 <br /> Raised
-        </Typography>
-
-        <Typography className="alignright" variant="body2" color="textSecondary"component="p">
-          $10000 <br /> Goal
-        </Typography>
-
-      </CardContent>
-    </Card>
-
-  </div>
-  );
+          <br/>
+        <DonationCard
+        title="Ronald McDonald House"
+        goal="$10000"
+        raised="$2500"
+        donors="215"        
+        />
+          <br />
+          <br />
+          <br />
+          <Posts></Posts>
+        </div>
+      </div>
+    );
+  }
 }

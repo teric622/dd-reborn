@@ -21,29 +21,28 @@ export default class UserHome extends Component{
                     <hr/>
                     <div className ="Border">
                     <div className ="MyPro">
-
-                    <h5>My Profile</h5>
+                        <br/>
+                        <h5><Link to='/user/Profile' className="user-link">Profile</Link></h5>
                 
                     </div>
                     </div>
                     </center>
                     <center>
                     <hr/> 
+                    <br/>
                             <div className = "MyDon">
                     <h5><Link to='/user/mydonations' className="user-link">My Donations</Link></h5>
                             </div>
                     <hr/> 
-
-                    <div className = "MySocial">
-                    <h5><Link to="user/Posts" className="user-link">Media</Link></h5>
-                    </div>
-                    <hr/>
-                             <div className = "MyPay">
+                    <br/>
+                   
+                    <div className = "MyPay">
                     <h5><Link to="user/payments" className="user-link">Payment</Link></h5>
                     </div>
                     </center>
                     <center>
                     <hr/>
+                    <br/>
                             <div className = "MySet">
                     <h5>Settings</h5>
                       

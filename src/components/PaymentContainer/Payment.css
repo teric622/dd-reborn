@@ -1,14 +1,19 @@
 .payment {
+
     font: OpenSans800;
     color:#413670;
+
   }
+  
   .payment-card {
+
     border: 3px solid none;
     width: 400px;
     height: 300px;
     border-radius: 40px;
     background-color: #FAFCFC;
     margin-top: 15px;
+
   }
   /*
   .border-wrap {
@@ -46,7 +51,7 @@
   }
   .logo {
     height: 150px;
-    width: 150px;
+    width: auto;
     margin-left: 15px;
     text-align: left;
   }

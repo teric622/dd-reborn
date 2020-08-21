@@ -1,33 +1,15 @@
 import React, { Component } from "react"; 
-import ReactDOM from "react-dom";
-
 //import components 
 import Checkout from './stripe-checkout';
 
 import '../../App.css';
 //import logo
-import logo from '../../assets/DDLogo.png';
-
-//import icons / material ui
-import { styled } from '@material-ui/core/styles';
-import { Tooltip } from '@material-ui/core';
-import MoreHorizIcon from '@material-ui/icons/MoreHoriz';  
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-
-//import bootstrap
-import Row from 'react-bootstrap/Row';
+import logo from '../../assets/Group-1.png';
 
 //import stylesheet
 import './Payment.css';
+import BackButton from "../UtilitiesContainer/BackButton";
 
-const BackButton = styled(ArrowBackIcon)({
-    clickableIcon: {
-      color: 'black',
-      '&:hover': {
-      color: 'red',
-      },
-    },
-  });
 
 export default class Payment extends Component {
    
@@ -57,8 +39,8 @@ export default class Payment extends Component {
             <div className='payment'>
 
                 <div className= 'row-1'>
-                    <div className= 'col-1'><BackButton onClick={event => window.location.href='../user'} /></div>
-                    <div className= 'col-1'><h1> Payment </h1></div>
+                    <BackButton/>
+                    <center><div className= 'col-1'><h1> Payment </h1></div></center>
                 </div> 
             
                 <center>
@@ -75,12 +57,7 @@ export default class Payment extends Component {
                 </center>
                 <br/>
                 <br/>
-                <hr/>
-                
-                {/* <div className='row-3'> 
-                    <div className= 'col-3'><h3>Card ending in **3751</h3></div>  
-                    <div className= 'col-3'><MoreHorizIcon  onClick={event => this.cardNetworkSelector}/></div>
-                </div> */}
+                <hr/>               
                
             </div>
         );
