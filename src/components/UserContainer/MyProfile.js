@@ -20,7 +20,7 @@ export default class Profile extends Component {
                         <CardContent>
                 <img src={DDLogo} alt="logo" className="profilelogo" />
                 <h1>Code Differently</h1>
-                <p class="title">Programing</p>
+                <p class="title">Programming</p>
                 <p>920 Justison Street</p>
                 <p>Wilmington, DE 19709</p>
                 <a href="https://www.instagram.com/codeDifferently/"><i class="fa fa-instagram"></i></a>

@@ -9,6 +9,7 @@
     background-blend-mode: screen;
     animation: ani 5s infinite linear;
     background-size: 300%;
+    height:100vh;
 
 }
 
